@@ -1,0 +1,8 @@
+<p>
+  Welcome to the CSC 436 Class List!
+</p>
+Search here:<input type="text" [(ngModel)]="searchText" placeholder="Enter first and last name" />
+<button (click)="search()">Search</button>
+<ul>
+	<li *ngFor="let name of names">{{ name }}</li>
+</ul>
